@@ -2,7 +2,7 @@
 
 ## Descrizione
 
-Travel App è un'applicazione web progettata per aiutarti a gestire i tuoi viaggi. Suddivisione del viaggio in giornate, tappe dettagliate e visualizzazione delle tappe su una mappa. L'app offre anche la possibilità di aggiungere note, immagini e valutazioni per ogni tappa.
+Travel App è un'applicazione web progettata per aiutarti a gestire i tuoi viaggi. Il viaggio viene suddiviso in giornate con tappe dettagliate e visualizzazione di queste ultime su una mappa. L'app offre anche la possibilità di aggiungere note, immagini e valutazioni per ogni tappa.
 
 ## Funzionalità
 
