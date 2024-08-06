@@ -1,5 +1,20 @@
-# Vue 3 + Vite
+# Travel App
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Descrizione
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+Travel App è un'applicazione web progettata per aiutarti a pianificare e gestire i tuoi viaggi. Suddividi il viaggio in giornate, inserisci tappe dettagliate, visualizza le tappe su una mappa e tieni traccia della progressione delle tue visite. L'app offre anche la possibilità di aggiungere note, immagini e valutazioni per ogni tappa.
+
+## Funzionalità
+
+- **Pianificazione del Viaggio**: Suddividi il tuo viaggio in giornate e aggiungi tappe da visitare.
+- **Dettagli delle Tappe**: Inserisci informazioni dettagliate come titolo, descrizione, data, immagini, cibo, curiosità, ecc.
+- **Visualizzazione su Mappa**: Visualizza le tappe del tuo viaggio su una mappa interattiva tramite Google Maps.
+- **Tracciamento della Progressione**: Mantieni traccia delle tappe visitate anche quando chiudi la pagina.
+- **Note e Valutazioni**: Aggiungi note e valutazioni (da 1 a 5 stelle) per ogni tappa.
+- **Modale per Immagini e Dettagli**: Apri dettagli e immagini in una finestra modale.
+
+## Tecnologie utilizzate
+
+- **Vue 3**
+- **Bootstrap**
+- **Axios**
