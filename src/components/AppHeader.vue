@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-8">
                 <h2>Travel-app</h2>
