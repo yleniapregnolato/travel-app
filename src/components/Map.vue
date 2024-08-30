@@ -7,7 +7,7 @@ export default {
     data() {
         return {
             center: [45.4642, 9.1900],
-            zoom: 13,
+            zoom: 6,
             tileUrl: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
             tileAttribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
             markers: [
