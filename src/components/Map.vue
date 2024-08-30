@@ -13,9 +13,9 @@ export default {
                 attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
             }).addTo(map);
 
-            L.marker([45.4642, 9.1900])
+            L.marker([41.9028, 12.4964])
                 .addTo(map)
-                .bindPopup("Questo è un marker a Milano!")
+                .bindPopup("Roma")
                 .openPopup();
         });
     },
