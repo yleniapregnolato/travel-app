@@ -1,8 +1,10 @@
 <script>
 import AppHeader from "./components/AppHeader.vue";
+import Map from "./components/Map.vue";
 export default {
   components: {
-    AppHeader
+    AppHeader,
+    Map
 },
 };
 </script>
@@ -10,6 +12,7 @@ export default {
 <template>
   <div class="container-fluid" id="app">
     <AppHeader />
+    <Map />
   </div>
 </template>
 
