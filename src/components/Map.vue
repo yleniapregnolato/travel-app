@@ -34,5 +34,6 @@ export default {
     position: relative;
     bottom: 600px;
     margin-left: 40px;
+    border-radius: 30px;
 }
 </style>
