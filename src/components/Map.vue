@@ -6,7 +6,7 @@ export default {
     name: "MapView",
     data() {
         return {
-            center: [45.4642, 9.1900],
+            center: [42.4053, 12.8516],
             zoom: 6,
             tileUrl: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
             tileAttribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -14,7 +14,7 @@ export default {
                 { position: [41.9028, 12.4964], text: "Roma" },
                 { position: [45.4408, 12.3155], text: "Venezia" },
                 { position: [43.7696, 11.2558], text: "Firenze" },
-            ]
+            ],
         };
     },
     mounted() {
