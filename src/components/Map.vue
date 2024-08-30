@@ -1,34 +1,36 @@
 <script>
-import { onMounted } from "vue";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
 export default {
-    name: "MapView",
-    setup() {
-        onMounted(() => {
-            const map = L.map("map").setView([45.4642, 9.1900], 13);
+  name: "MapView",
+  data() {
+    return {
+      center: [45.4642, 9.1900],
+      zoom: 13,
+      tileUrl: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+      tileAttribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      markerPosition: [45.4642, 9.1900],
+      markerText: "Milano!"
+    };
+  },
+  mounted() {
+    this.initMap();
+  },
+  methods: {
+    initMap() {
+      const map = L.map("map").setView(this.center, this.zoom);
 
-            L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-            }).addTo(map);
+      L.tileLayer(this.tileUrl, {
+        attribution: this.tileAttribution,
+      }).addTo(map);
 
-            L.marker([41.9028, 12.4964])
-                .addTo(map)
-                .bindPopup("Roma")
-                .openPopup();
-
-            L.marker([45.4408, 12.3155])
-                .addTo(map)
-                .bindPopup("Venezia")
-                .openPopup();
-                
-            L.marker([43.7696, 11.2558])
-                .addTo(map)
-                .bindPopup("Firenze")
-                .openPopup();
-        });
-    },
+      L.marker(this.markerPosition)
+        .addTo(map)
+        .bindPopup(this.markerText)
+        .openPopup();
+    }
+  }
 };
 </script>
 
