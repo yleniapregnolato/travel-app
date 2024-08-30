@@ -16,4 +16,5 @@ Travel App è un'applicazione web progettata per aiutarti a gestire i tuoi viagg
 
 - **Vue 3**
 - **Bootstrap**
-- **Axios**
+- **Leaflet**: Libreria open-source per la creazione di mappe interattive. Utilizzata per visualizzare mappe e aggiungere marker.
+
