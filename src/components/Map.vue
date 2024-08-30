@@ -11,9 +11,9 @@ export default {
             tileUrl: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
             tileAttribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
             markers: [
-                { position: [41.9028, 12.4964], text: "Roma" },
-                { position: [45.4408, 12.3155], text: "Venezia" },
-                { position: [43.7696, 11.2558], text: "Firenze" },
+                { position: [41.9028, 12.4964], text: "Roma", img: "/src/assets/img/carbonara.jpeg" },
+                { position: [45.4408, 12.3155], text: "Venezia", img: "/src/assets/img/baccalà.jpeg" },
+                { position: [43.7696, 11.2558], text: "Firenze", img: "/src/assets/img/fiorentina.jpeg" },
             ],
         };
     },
@@ -33,10 +33,15 @@ export default {
             }).addTo(map);
 
             this.markers.forEach(marker => {
+                const popupContent = `
+                    <div>
+                        <h3>${marker.text}</h3>
+                        <img src="${marker.img}" alt="${marker.text}" style="width:200px;height:auto;">
+                    </div>
+                `;
                 L.marker(marker.position)
                     .addTo(map)
-                    .bindPopup(marker.text)
-                    .openPopup();
+                    .bindPopup(popupContent);
             });
         }
     }
@@ -49,11 +54,11 @@ export default {
   
 <style scoped lang="scss">
 #map {
-    height: 500px;
-    width: 50%;
+    height: 550px;
+    width: 80%;
     position: relative;
-    bottom: 600px;
-    margin-left: 40px;
+    bottom: 650px;
     border-radius: 30px;
+    margin: 0 auto;
 }
 </style>
