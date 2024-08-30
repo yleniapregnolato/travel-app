@@ -17,6 +17,16 @@ export default {
                 .addTo(map)
                 .bindPopup("Roma")
                 .openPopup();
+
+            L.marker([45.4408, 12.3155])
+                .addTo(map)
+                .bindPopup("Venezia")
+                .openPopup();
+                
+            L.marker([43.7696, 11.2558])
+                .addTo(map)
+                .bindPopup("Firenze")
+                .openPopup();
         });
     },
 };
